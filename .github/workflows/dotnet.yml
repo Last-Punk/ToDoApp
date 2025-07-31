@@ -46,7 +46,7 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Publish .NET project
-      run: dotnet publish --no-build -c Release -o ./publish-output
+      run: dotnet publish -c Release -o ./publish-output
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
